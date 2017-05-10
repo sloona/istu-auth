@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Istu.Elma.Auth.Models
 {
-    class Auth
+    public class Auth
     {
         [DisplayName("ФИО")]
         public string FullName { get; set; }

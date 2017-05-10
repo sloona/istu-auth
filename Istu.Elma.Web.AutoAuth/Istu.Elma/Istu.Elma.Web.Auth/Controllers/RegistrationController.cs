@@ -1,4 +1,5 @@
 ﻿using Istu.Elma.Web.Auth.Models;
+using Istu.Elma.Auth.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,10 @@ namespace Istu.Elma.Web.Auth.Controllers
                 //ViewBag.Error = "Неправильно заполнены данные";
                 return View("Registration", model);
             }
+
+            
+            var test = new AuthRepository();
+            test.CreateElmaTask("Шонбина Яна Сергеевна","sloona@mail.ru");
             return View("Reply");
         }
     }
