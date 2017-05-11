@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Istu.Elma.Auth.Models;
-using Istu.Elma.Auth.ElmaService;
+using Istu.Elma.Auth.ElmaServiceReference;
+
+
 
 
 namespace Istu.Elma.Auth.Repository
@@ -18,12 +20,12 @@ namespace Istu.Elma.Auth.Repository
 
         public void CreateElmaTask(string Fio="", string Email = "")
         {
-            var elmaService = new WFPWebServiceSoapClient();
+            WFPWebServiceSoapClient elmaClient = new WFPWebServiceSoapClient("WFPWebServiceSoap");
             var data = new WebData();
             //var t = new WebDataItem();
             //t.Name = "test"; t.Value = "test value";
             data.Items = new WebDataItem[] { new WebDataItem{Name = "Fio", Value = Fio }, new WebDataItem { Name = "Email", Value = Email }};
-            elmaService.Run("service", "Password_123", "16040229-1144-42b7-9dff-33e1c03c01f3", "Реквизиты доступа к системе Элма", data);
+            elmaClient.Run("service", "Password_123", "16040229-1144-42b7-9dff-33e1c03c01f3", "Реквизиты доступа к системе Элма", data);
         }
     }
 }

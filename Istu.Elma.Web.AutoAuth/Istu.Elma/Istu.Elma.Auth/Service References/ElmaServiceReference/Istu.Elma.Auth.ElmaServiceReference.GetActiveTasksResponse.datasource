@@ -5,6 +5,6 @@
     Renaming the file extension or editing the content of this file may   
     cause the file to be unrecognizable by the program.
 -->
-<GenericObjectDataSource DisplayName="WorkflowMessageSendResult" Version="1.0" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-   <TypeInfo>Istu.Elma.Auth.ElmaService.WorkflowMessageSendResult, Service References.ElmaService.Reference.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
+<GenericObjectDataSource DisplayName="GetActiveTasksResponse" Version="1.0" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+   <TypeInfo>Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksResponse, Service References.ElmaServiceReference.Reference.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
 </GenericObjectDataSource>

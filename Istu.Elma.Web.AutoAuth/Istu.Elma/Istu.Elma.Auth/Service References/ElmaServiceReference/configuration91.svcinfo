@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="qL31XbZtGgCoM4YDraOu7WE9IyQ=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="L0ffBBR66A6oCvpr3/ZRruu+/+8=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="WFPWebServiceSoap">
       <properties>
@@ -112,7 +112,7 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="WFPWebServiceSoap" contract="ElmaService.WFPWebServiceSoap" bindingType="basicHttpBinding" address="http://bpm.istu.ru:8000/Modules/EleWise.ELMA.Workflow.Processes.Web/WFPWebService.asmx" bindingConfiguration="WFPWebServiceSoap">
+    <endpoint name="WFPWebServiceSoap" contract="ElmaServiceReference.WFPWebServiceSoap" bindingType="basicHttpBinding" address="http://bpm.istu.ru:8000/Modules/EleWise.ELMA.Workflow.Processes.Web/WFPWebService.asmx" bindingConfiguration="WFPWebServiceSoap">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>http://bpm.istu.ru:8000/Modules/EleWise.ELMA.Workflow.Processes.Web/WFPWebService.asmx</serializedValue>
@@ -127,7 +127,7 @@
           <serializedValue>WFPWebServiceSoap</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>ElmaService.WFPWebServiceSoap</serializedValue>
+          <serializedValue>ElmaServiceReference.WFPWebServiceSoap</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>

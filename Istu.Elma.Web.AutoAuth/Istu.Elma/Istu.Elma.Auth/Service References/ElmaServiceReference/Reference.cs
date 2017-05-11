@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Istu.Elma.Auth.ElmaService {
+namespace Istu.Elma.Auth.ElmaServiceReference {
     using System.Runtime.Serialization;
     using System;
     
@@ -23,7 +23,7 @@ namespace Istu.Elma.Auth.ElmaService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Istu.Elma.Auth.ElmaService.WebDataItem[] ItemsField;
+        private Istu.Elma.Auth.ElmaServiceReference.WebDataItem[] ItemsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ValueField;
@@ -39,7 +39,7 @@ namespace Istu.Elma.Auth.ElmaService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public Istu.Elma.Auth.ElmaService.WebDataItem[] Items {
+        public Istu.Elma.Auth.ElmaServiceReference.WebDataItem[] Items {
             get {
                 return this.ItemsField;
             }
@@ -90,10 +90,10 @@ namespace Istu.Elma.Auth.ElmaService {
         private string ValueField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Istu.Elma.Auth.ElmaService.WebData DataField;
+        private Istu.Elma.Auth.ElmaServiceReference.WebData DataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Istu.Elma.Auth.ElmaService.WebData[] DataArrayField;
+        private Istu.Elma.Auth.ElmaServiceReference.WebData[] DataArrayField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -132,7 +132,7 @@ namespace Istu.Elma.Auth.ElmaService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
-        public Istu.Elma.Auth.ElmaService.WebData Data {
+        public Istu.Elma.Auth.ElmaServiceReference.WebData Data {
             get {
                 return this.DataField;
             }
@@ -145,7 +145,7 @@ namespace Istu.Elma.Auth.ElmaService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public Istu.Elma.Auth.ElmaService.WebData[] DataArray {
+        public Istu.Elma.Auth.ElmaServiceReference.WebData[] DataArray {
             get {
                 return this.DataArrayField;
             }
@@ -191,7 +191,7 @@ namespace Istu.Elma.Auth.ElmaService {
         private System.DateTime EndDateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Istu.Elma.Auth.ElmaService.ConnectorInfo[] ConnectorInfoField;
+        private Istu.Elma.Auth.ElmaServiceReference.ConnectorInfo[] ConnectorInfoField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -282,7 +282,7 @@ namespace Istu.Elma.Auth.ElmaService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
-        public Istu.Elma.Auth.ElmaService.ConnectorInfo[] ConnectorInfo {
+        public Istu.Elma.Auth.ElmaServiceReference.ConnectorInfo[] ConnectorInfo {
             get {
                 return this.ConnectorInfoField;
             }
@@ -409,71 +409,71 @@ namespace Istu.Elma.Auth.ElmaService {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.elma-bpm.ru/WFPWebService/", ConfigurationName="ElmaService.WFPWebServiceSoap")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.elma-bpm.ru/WFPWebService/", ConfigurationName="ElmaServiceReference.WFPWebServiceSoap")]
     public interface WFPWebServiceSoap {
         
         // CODEGEN: Контракт генерации сообщений с именем userName из пространства имен http://www.elma-bpm.ru/WFPWebService/ не отмечен как обнуляемый
         [System.ServiceModel.OperationContractAttribute(Action="http://www.elma-bpm.ru/WFPWebService/Run", ReplyAction="*")]
-        Istu.Elma.Auth.ElmaService.RunResponse Run(Istu.Elma.Auth.ElmaService.RunRequest request);
+        Istu.Elma.Auth.ElmaServiceReference.RunResponse Run(Istu.Elma.Auth.ElmaServiceReference.RunRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.elma-bpm.ru/WFPWebService/Run", ReplyAction="*")]
-        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.RunResponse> RunAsync(Istu.Elma.Auth.ElmaService.RunRequest request);
+        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.RunResponse> RunAsync(Istu.Elma.Auth.ElmaServiceReference.RunRequest request);
         
         // CODEGEN: Контракт генерации сообщений с именем userName из пространства имен http://www.elma-bpm.ru/WFPWebService/ не отмечен как обнуляемый
         [System.ServiceModel.OperationContractAttribute(Action="http://www.elma-bpm.ru/WFPWebService/GetStatus", ReplyAction="*")]
-        Istu.Elma.Auth.ElmaService.GetStatusResponse GetStatus(Istu.Elma.Auth.ElmaService.GetStatusRequest request);
+        Istu.Elma.Auth.ElmaServiceReference.GetStatusResponse GetStatus(Istu.Elma.Auth.ElmaServiceReference.GetStatusRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.elma-bpm.ru/WFPWebService/GetStatus", ReplyAction="*")]
-        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.GetStatusResponse> GetStatusAsync(Istu.Elma.Auth.ElmaService.GetStatusRequest request);
+        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.GetStatusResponse> GetStatusAsync(Istu.Elma.Auth.ElmaServiceReference.GetStatusRequest request);
         
         // CODEGEN: Контракт генерации сообщений с именем userName из пространства имен http://www.elma-bpm.ru/WFPWebService/ не отмечен как обнуляемый
         [System.ServiceModel.OperationContractAttribute(Action="http://www.elma-bpm.ru/WFPWebService/LoadContext", ReplyAction="*")]
-        Istu.Elma.Auth.ElmaService.LoadContextResponse LoadContext(Istu.Elma.Auth.ElmaService.LoadContextRequest request);
+        Istu.Elma.Auth.ElmaServiceReference.LoadContextResponse LoadContext(Istu.Elma.Auth.ElmaServiceReference.LoadContextRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.elma-bpm.ru/WFPWebService/LoadContext", ReplyAction="*")]
-        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.LoadContextResponse> LoadContextAsync(Istu.Elma.Auth.ElmaService.LoadContextRequest request);
+        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.LoadContextResponse> LoadContextAsync(Istu.Elma.Auth.ElmaServiceReference.LoadContextRequest request);
         
         // CODEGEN: Контракт генерации сообщений с именем userName из пространства имен http://www.elma-bpm.ru/WFPWebService/ не отмечен как обнуляемый
         [System.ServiceModel.OperationContractAttribute(Action="http://www.elma-bpm.ru/WFPWebService/GetActiveTasks", ReplyAction="*")]
-        Istu.Elma.Auth.ElmaService.GetActiveTasksResponse GetActiveTasks(Istu.Elma.Auth.ElmaService.GetActiveTasksRequest request);
+        Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksResponse GetActiveTasks(Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.elma-bpm.ru/WFPWebService/GetActiveTasks", ReplyAction="*")]
-        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.GetActiveTasksResponse> GetActiveTasksAsync(Istu.Elma.Auth.ElmaService.GetActiveTasksRequest request);
+        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksResponse> GetActiveTasksAsync(Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksRequest request);
         
         // CODEGEN: Контракт генерации сообщений с именем userName из пространства имен http://www.elma-bpm.ru/WFPWebService/ не отмечен как обнуляемый
         [System.ServiceModel.OperationContractAttribute(Action="http://www.elma-bpm.ru/WFPWebService/ExecuteTask", ReplyAction="*")]
-        Istu.Elma.Auth.ElmaService.ExecuteTaskResponse ExecuteTask(Istu.Elma.Auth.ElmaService.ExecuteTaskRequest request);
+        Istu.Elma.Auth.ElmaServiceReference.ExecuteTaskResponse ExecuteTask(Istu.Elma.Auth.ElmaServiceReference.ExecuteTaskRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.elma-bpm.ru/WFPWebService/ExecuteTask", ReplyAction="*")]
-        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.ExecuteTaskResponse> ExecuteTaskAsync(Istu.Elma.Auth.ElmaService.ExecuteTaskRequest request);
+        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.ExecuteTaskResponse> ExecuteTaskAsync(Istu.Elma.Auth.ElmaServiceReference.ExecuteTaskRequest request);
         
         // CODEGEN: Контракт генерации сообщений с именем userName из пространства имен http://www.elma-bpm.ru/WFPWebService/ не отмечен как обнуляемый
         [System.ServiceModel.OperationContractAttribute(Action="http://www.elma-bpm.ru/WFPWebService/SaveContext", ReplyAction="*")]
-        Istu.Elma.Auth.ElmaService.SaveContextResponse SaveContext(Istu.Elma.Auth.ElmaService.SaveContextRequest request);
+        Istu.Elma.Auth.ElmaServiceReference.SaveContextResponse SaveContext(Istu.Elma.Auth.ElmaServiceReference.SaveContextRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.elma-bpm.ru/WFPWebService/SaveContext", ReplyAction="*")]
-        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.SaveContextResponse> SaveContextAsync(Istu.Elma.Auth.ElmaService.SaveContextRequest request);
+        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.SaveContextResponse> SaveContextAsync(Istu.Elma.Auth.ElmaServiceReference.SaveContextRequest request);
         
         // CODEGEN: Контракт генерации сообщений с именем userName из пространства имен http://www.elma-bpm.ru/WFPWebService/ не отмечен как обнуляемый
         [System.ServiceModel.OperationContractAttribute(Action="http://www.elma-bpm.ru/WFPWebService/Terminate", ReplyAction="*")]
-        Istu.Elma.Auth.ElmaService.TerminateResponse Terminate(Istu.Elma.Auth.ElmaService.TerminateRequest request);
+        Istu.Elma.Auth.ElmaServiceReference.TerminateResponse Terminate(Istu.Elma.Auth.ElmaServiceReference.TerminateRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.elma-bpm.ru/WFPWebService/Terminate", ReplyAction="*")]
-        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.TerminateResponse> TerminateAsync(Istu.Elma.Auth.ElmaService.TerminateRequest request);
+        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.TerminateResponse> TerminateAsync(Istu.Elma.Auth.ElmaServiceReference.TerminateRequest request);
         
         // CODEGEN: Контракт генерации сообщений с именем userName из пространства имен http://www.elma-bpm.ru/WFPWebService/ не отмечен как обнуляемый
         [System.ServiceModel.OperationContractAttribute(Action="http://www.elma-bpm.ru/WFPWebService/SendMessage", ReplyAction="*")]
-        Istu.Elma.Auth.ElmaService.SendMessageResponse SendMessage(Istu.Elma.Auth.ElmaService.SendMessageRequest request);
+        Istu.Elma.Auth.ElmaServiceReference.SendMessageResponse SendMessage(Istu.Elma.Auth.ElmaServiceReference.SendMessageRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.elma-bpm.ru/WFPWebService/SendMessage", ReplyAction="*")]
-        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.SendMessageResponse> SendMessageAsync(Istu.Elma.Auth.ElmaService.SendMessageRequest request);
+        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.SendMessageResponse> SendMessageAsync(Istu.Elma.Auth.ElmaServiceReference.SendMessageRequest request);
         
         // CODEGEN: Контракт генерации сообщений с именем userName из пространства имен http://www.elma-bpm.ru/WFPWebService/ не отмечен как обнуляемый
         [System.ServiceModel.OperationContractAttribute(Action="http://www.elma-bpm.ru/WFPWebService/SendMessageToInstance", ReplyAction="*")]
-        Istu.Elma.Auth.ElmaService.SendMessageToInstanceResponse SendMessageToInstance(Istu.Elma.Auth.ElmaService.SendMessageToInstanceRequest request);
+        Istu.Elma.Auth.ElmaServiceReference.SendMessageToInstanceResponse SendMessageToInstance(Istu.Elma.Auth.ElmaServiceReference.SendMessageToInstanceRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.elma-bpm.ru/WFPWebService/SendMessageToInstance", ReplyAction="*")]
-        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.SendMessageToInstanceResponse> SendMessageToInstanceAsync(Istu.Elma.Auth.ElmaService.SendMessageToInstanceRequest request);
+        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.SendMessageToInstanceResponse> SendMessageToInstanceAsync(Istu.Elma.Auth.ElmaServiceReference.SendMessageToInstanceRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -483,12 +483,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class RunRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="Run", Namespace="http://www.elma-bpm.ru/WFPWebService/", Order=0)]
-        public Istu.Elma.Auth.ElmaService.RunRequestBody Body;
+        public Istu.Elma.Auth.ElmaServiceReference.RunRequestBody Body;
         
         public RunRequest() {
         }
         
-        public RunRequest(Istu.Elma.Auth.ElmaService.RunRequestBody Body) {
+        public RunRequest(Istu.Elma.Auth.ElmaServiceReference.RunRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -512,12 +512,12 @@ namespace Istu.Elma.Auth.ElmaService {
         public string instanceName;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public Istu.Elma.Auth.ElmaService.WebData data;
+        public Istu.Elma.Auth.ElmaServiceReference.WebData data;
         
         public RunRequestBody() {
         }
         
-        public RunRequestBody(string userName, string password, string token, string instanceName, Istu.Elma.Auth.ElmaService.WebData data) {
+        public RunRequestBody(string userName, string password, string token, string instanceName, Istu.Elma.Auth.ElmaServiceReference.WebData data) {
             this.userName = userName;
             this.password = password;
             this.token = token;
@@ -533,12 +533,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class RunResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="RunResponse", Namespace="http://www.elma-bpm.ru/WFPWebService/", Order=0)]
-        public Istu.Elma.Auth.ElmaService.RunResponseBody Body;
+        public Istu.Elma.Auth.ElmaServiceReference.RunResponseBody Body;
         
         public RunResponse() {
         }
         
-        public RunResponse(Istu.Elma.Auth.ElmaService.RunResponseBody Body) {
+        public RunResponse(Istu.Elma.Auth.ElmaServiceReference.RunResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -567,12 +567,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class GetStatusRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetStatus", Namespace="http://www.elma-bpm.ru/WFPWebService/", Order=0)]
-        public Istu.Elma.Auth.ElmaService.GetStatusRequestBody Body;
+        public Istu.Elma.Auth.ElmaServiceReference.GetStatusRequestBody Body;
         
         public GetStatusRequest() {
         }
         
-        public GetStatusRequest(Istu.Elma.Auth.ElmaService.GetStatusRequestBody Body) {
+        public GetStatusRequest(Istu.Elma.Auth.ElmaServiceReference.GetStatusRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -609,12 +609,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class GetStatusResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetStatusResponse", Namespace="http://www.elma-bpm.ru/WFPWebService/", Order=0)]
-        public Istu.Elma.Auth.ElmaService.GetStatusResponseBody Body;
+        public Istu.Elma.Auth.ElmaServiceReference.GetStatusResponseBody Body;
         
         public GetStatusResponse() {
         }
         
-        public GetStatusResponse(Istu.Elma.Auth.ElmaService.GetStatusResponseBody Body) {
+        public GetStatusResponse(Istu.Elma.Auth.ElmaServiceReference.GetStatusResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -643,12 +643,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class LoadContextRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="LoadContext", Namespace="http://www.elma-bpm.ru/WFPWebService/", Order=0)]
-        public Istu.Elma.Auth.ElmaService.LoadContextRequestBody Body;
+        public Istu.Elma.Auth.ElmaServiceReference.LoadContextRequestBody Body;
         
         public LoadContextRequest() {
         }
         
-        public LoadContextRequest(Istu.Elma.Auth.ElmaService.LoadContextRequestBody Body) {
+        public LoadContextRequest(Istu.Elma.Auth.ElmaServiceReference.LoadContextRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -685,12 +685,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class LoadContextResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="LoadContextResponse", Namespace="http://www.elma-bpm.ru/WFPWebService/", Order=0)]
-        public Istu.Elma.Auth.ElmaService.LoadContextResponseBody Body;
+        public Istu.Elma.Auth.ElmaServiceReference.LoadContextResponseBody Body;
         
         public LoadContextResponse() {
         }
         
-        public LoadContextResponse(Istu.Elma.Auth.ElmaService.LoadContextResponseBody Body) {
+        public LoadContextResponse(Istu.Elma.Auth.ElmaServiceReference.LoadContextResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -702,12 +702,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class LoadContextResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public Istu.Elma.Auth.ElmaService.WebData LoadContextResult;
+        public Istu.Elma.Auth.ElmaServiceReference.WebData LoadContextResult;
         
         public LoadContextResponseBody() {
         }
         
-        public LoadContextResponseBody(Istu.Elma.Auth.ElmaService.WebData LoadContextResult) {
+        public LoadContextResponseBody(Istu.Elma.Auth.ElmaServiceReference.WebData LoadContextResult) {
             this.LoadContextResult = LoadContextResult;
         }
     }
@@ -719,12 +719,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class GetActiveTasksRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetActiveTasks", Namespace="http://www.elma-bpm.ru/WFPWebService/", Order=0)]
-        public Istu.Elma.Auth.ElmaService.GetActiveTasksRequestBody Body;
+        public Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksRequestBody Body;
         
         public GetActiveTasksRequest() {
         }
         
-        public GetActiveTasksRequest(Istu.Elma.Auth.ElmaService.GetActiveTasksRequestBody Body) {
+        public GetActiveTasksRequest(Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -761,12 +761,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class GetActiveTasksResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetActiveTasksResponse", Namespace="http://www.elma-bpm.ru/WFPWebService/", Order=0)]
-        public Istu.Elma.Auth.ElmaService.GetActiveTasksResponseBody Body;
+        public Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksResponseBody Body;
         
         public GetActiveTasksResponse() {
         }
         
-        public GetActiveTasksResponse(Istu.Elma.Auth.ElmaService.GetActiveTasksResponseBody Body) {
+        public GetActiveTasksResponse(Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -778,12 +778,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class GetActiveTasksResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public Istu.Elma.Auth.ElmaService.TaskInfo[] GetActiveTasksResult;
+        public Istu.Elma.Auth.ElmaServiceReference.TaskInfo[] GetActiveTasksResult;
         
         public GetActiveTasksResponseBody() {
         }
         
-        public GetActiveTasksResponseBody(Istu.Elma.Auth.ElmaService.TaskInfo[] GetActiveTasksResult) {
+        public GetActiveTasksResponseBody(Istu.Elma.Auth.ElmaServiceReference.TaskInfo[] GetActiveTasksResult) {
             this.GetActiveTasksResult = GetActiveTasksResult;
         }
     }
@@ -795,12 +795,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class ExecuteTaskRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ExecuteTask", Namespace="http://www.elma-bpm.ru/WFPWebService/", Order=0)]
-        public Istu.Elma.Auth.ElmaService.ExecuteTaskRequestBody Body;
+        public Istu.Elma.Auth.ElmaServiceReference.ExecuteTaskRequestBody Body;
         
         public ExecuteTaskRequest() {
         }
         
-        public ExecuteTaskRequest(Istu.Elma.Auth.ElmaService.ExecuteTaskRequestBody Body) {
+        public ExecuteTaskRequest(Istu.Elma.Auth.ElmaServiceReference.ExecuteTaskRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -824,12 +824,12 @@ namespace Istu.Elma.Auth.ElmaService {
         public string connectorUid;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public Istu.Elma.Auth.ElmaService.WebData data;
+        public Istu.Elma.Auth.ElmaServiceReference.WebData data;
         
         public ExecuteTaskRequestBody() {
         }
         
-        public ExecuteTaskRequestBody(string userName, string password, long taskId, string connectorUid, Istu.Elma.Auth.ElmaService.WebData data) {
+        public ExecuteTaskRequestBody(string userName, string password, long taskId, string connectorUid, Istu.Elma.Auth.ElmaServiceReference.WebData data) {
             this.userName = userName;
             this.password = password;
             this.taskId = taskId;
@@ -845,12 +845,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class ExecuteTaskResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ExecuteTaskResponse", Namespace="http://www.elma-bpm.ru/WFPWebService/", Order=0)]
-        public Istu.Elma.Auth.ElmaService.ExecuteTaskResponseBody Body;
+        public Istu.Elma.Auth.ElmaServiceReference.ExecuteTaskResponseBody Body;
         
         public ExecuteTaskResponse() {
         }
         
-        public ExecuteTaskResponse(Istu.Elma.Auth.ElmaService.ExecuteTaskResponseBody Body) {
+        public ExecuteTaskResponse(Istu.Elma.Auth.ElmaServiceReference.ExecuteTaskResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -872,12 +872,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class SaveContextRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="SaveContext", Namespace="http://www.elma-bpm.ru/WFPWebService/", Order=0)]
-        public Istu.Elma.Auth.ElmaService.SaveContextRequestBody Body;
+        public Istu.Elma.Auth.ElmaServiceReference.SaveContextRequestBody Body;
         
         public SaveContextRequest() {
         }
         
-        public SaveContextRequest(Istu.Elma.Auth.ElmaService.SaveContextRequestBody Body) {
+        public SaveContextRequest(Istu.Elma.Auth.ElmaServiceReference.SaveContextRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -898,12 +898,12 @@ namespace Istu.Elma.Auth.ElmaService {
         public long instanceId;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public Istu.Elma.Auth.ElmaService.WebData data;
+        public Istu.Elma.Auth.ElmaServiceReference.WebData data;
         
         public SaveContextRequestBody() {
         }
         
-        public SaveContextRequestBody(string userName, string password, long instanceId, Istu.Elma.Auth.ElmaService.WebData data) {
+        public SaveContextRequestBody(string userName, string password, long instanceId, Istu.Elma.Auth.ElmaServiceReference.WebData data) {
             this.userName = userName;
             this.password = password;
             this.instanceId = instanceId;
@@ -918,12 +918,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class SaveContextResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="SaveContextResponse", Namespace="http://www.elma-bpm.ru/WFPWebService/", Order=0)]
-        public Istu.Elma.Auth.ElmaService.SaveContextResponseBody Body;
+        public Istu.Elma.Auth.ElmaServiceReference.SaveContextResponseBody Body;
         
         public SaveContextResponse() {
         }
         
-        public SaveContextResponse(Istu.Elma.Auth.ElmaService.SaveContextResponseBody Body) {
+        public SaveContextResponse(Istu.Elma.Auth.ElmaServiceReference.SaveContextResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -945,12 +945,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class TerminateRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="Terminate", Namespace="http://www.elma-bpm.ru/WFPWebService/", Order=0)]
-        public Istu.Elma.Auth.ElmaService.TerminateRequestBody Body;
+        public Istu.Elma.Auth.ElmaServiceReference.TerminateRequestBody Body;
         
         public TerminateRequest() {
         }
         
-        public TerminateRequest(Istu.Elma.Auth.ElmaService.TerminateRequestBody Body) {
+        public TerminateRequest(Istu.Elma.Auth.ElmaServiceReference.TerminateRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -991,12 +991,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class TerminateResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="TerminateResponse", Namespace="http://www.elma-bpm.ru/WFPWebService/", Order=0)]
-        public Istu.Elma.Auth.ElmaService.TerminateResponseBody Body;
+        public Istu.Elma.Auth.ElmaServiceReference.TerminateResponseBody Body;
         
         public TerminateResponse() {
         }
         
-        public TerminateResponse(Istu.Elma.Auth.ElmaService.TerminateResponseBody Body) {
+        public TerminateResponse(Istu.Elma.Auth.ElmaServiceReference.TerminateResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -1018,12 +1018,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class SendMessageRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="SendMessage", Namespace="http://www.elma-bpm.ru/WFPWebService/", Order=0)]
-        public Istu.Elma.Auth.ElmaService.SendMessageRequestBody Body;
+        public Istu.Elma.Auth.ElmaServiceReference.SendMessageRequestBody Body;
         
         public SendMessageRequest() {
         }
         
-        public SendMessageRequest(Istu.Elma.Auth.ElmaService.SendMessageRequestBody Body) {
+        public SendMessageRequest(Istu.Elma.Auth.ElmaServiceReference.SendMessageRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -1044,12 +1044,12 @@ namespace Istu.Elma.Auth.ElmaService {
         public string messageTypeName;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
-        public Istu.Elma.Auth.ElmaService.WebData data;
+        public Istu.Elma.Auth.ElmaServiceReference.WebData data;
         
         public SendMessageRequestBody() {
         }
         
-        public SendMessageRequestBody(string userName, string password, string messageTypeName, Istu.Elma.Auth.ElmaService.WebData data) {
+        public SendMessageRequestBody(string userName, string password, string messageTypeName, Istu.Elma.Auth.ElmaServiceReference.WebData data) {
             this.userName = userName;
             this.password = password;
             this.messageTypeName = messageTypeName;
@@ -1064,12 +1064,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class SendMessageResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="SendMessageResponse", Namespace="http://www.elma-bpm.ru/WFPWebService/", Order=0)]
-        public Istu.Elma.Auth.ElmaService.SendMessageResponseBody Body;
+        public Istu.Elma.Auth.ElmaServiceReference.SendMessageResponseBody Body;
         
         public SendMessageResponse() {
         }
         
-        public SendMessageResponse(Istu.Elma.Auth.ElmaService.SendMessageResponseBody Body) {
+        public SendMessageResponse(Istu.Elma.Auth.ElmaServiceReference.SendMessageResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -1081,12 +1081,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class SendMessageResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public Istu.Elma.Auth.ElmaService.WorkflowMessageSendResult SendMessageResult;
+        public Istu.Elma.Auth.ElmaServiceReference.WorkflowMessageSendResult SendMessageResult;
         
         public SendMessageResponseBody() {
         }
         
-        public SendMessageResponseBody(Istu.Elma.Auth.ElmaService.WorkflowMessageSendResult SendMessageResult) {
+        public SendMessageResponseBody(Istu.Elma.Auth.ElmaServiceReference.WorkflowMessageSendResult SendMessageResult) {
             this.SendMessageResult = SendMessageResult;
         }
     }
@@ -1098,12 +1098,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class SendMessageToInstanceRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="SendMessageToInstance", Namespace="http://www.elma-bpm.ru/WFPWebService/", Order=0)]
-        public Istu.Elma.Auth.ElmaService.SendMessageToInstanceRequestBody Body;
+        public Istu.Elma.Auth.ElmaServiceReference.SendMessageToInstanceRequestBody Body;
         
         public SendMessageToInstanceRequest() {
         }
         
-        public SendMessageToInstanceRequest(Istu.Elma.Auth.ElmaService.SendMessageToInstanceRequestBody Body) {
+        public SendMessageToInstanceRequest(Istu.Elma.Auth.ElmaServiceReference.SendMessageToInstanceRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -1127,12 +1127,12 @@ namespace Istu.Elma.Auth.ElmaService {
         public string messageTypeName;
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
-        public Istu.Elma.Auth.ElmaService.WebData data;
+        public Istu.Elma.Auth.ElmaServiceReference.WebData data;
         
         public SendMessageToInstanceRequestBody() {
         }
         
-        public SendMessageToInstanceRequestBody(string userName, string password, long instanceId, string messageTypeName, Istu.Elma.Auth.ElmaService.WebData data) {
+        public SendMessageToInstanceRequestBody(string userName, string password, long instanceId, string messageTypeName, Istu.Elma.Auth.ElmaServiceReference.WebData data) {
             this.userName = userName;
             this.password = password;
             this.instanceId = instanceId;
@@ -1148,12 +1148,12 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class SendMessageToInstanceResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="SendMessageToInstanceResponse", Namespace="http://www.elma-bpm.ru/WFPWebService/", Order=0)]
-        public Istu.Elma.Auth.ElmaService.SendMessageToInstanceResponseBody Body;
+        public Istu.Elma.Auth.ElmaServiceReference.SendMessageToInstanceResponseBody Body;
         
         public SendMessageToInstanceResponse() {
         }
         
-        public SendMessageToInstanceResponse(Istu.Elma.Auth.ElmaService.SendMessageToInstanceResponseBody Body) {
+        public SendMessageToInstanceResponse(Istu.Elma.Auth.ElmaServiceReference.SendMessageToInstanceResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -1165,23 +1165,23 @@ namespace Istu.Elma.Auth.ElmaService {
     public partial class SendMessageToInstanceResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public Istu.Elma.Auth.ElmaService.WorkflowMessageSendResult SendMessageToInstanceResult;
+        public Istu.Elma.Auth.ElmaServiceReference.WorkflowMessageSendResult SendMessageToInstanceResult;
         
         public SendMessageToInstanceResponseBody() {
         }
         
-        public SendMessageToInstanceResponseBody(Istu.Elma.Auth.ElmaService.WorkflowMessageSendResult SendMessageToInstanceResult) {
+        public SendMessageToInstanceResponseBody(Istu.Elma.Auth.ElmaServiceReference.WorkflowMessageSendResult SendMessageToInstanceResult) {
             this.SendMessageToInstanceResult = SendMessageToInstanceResult;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface WFPWebServiceSoapChannel : Istu.Elma.Auth.ElmaService.WFPWebServiceSoap, System.ServiceModel.IClientChannel {
+    public interface WFPWebServiceSoapChannel : Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class WFPWebServiceSoapClient : System.ServiceModel.ClientBase<Istu.Elma.Auth.ElmaService.WFPWebServiceSoap>, Istu.Elma.Auth.ElmaService.WFPWebServiceSoap {
+    public partial class WFPWebServiceSoapClient : System.ServiceModel.ClientBase<Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap>, Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap {
         
         public WFPWebServiceSoapClient() {
         }
@@ -1203,279 +1203,279 @@ namespace Istu.Elma.Auth.ElmaService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Istu.Elma.Auth.ElmaService.RunResponse Istu.Elma.Auth.ElmaService.WFPWebServiceSoap.Run(Istu.Elma.Auth.ElmaService.RunRequest request) {
+        Istu.Elma.Auth.ElmaServiceReference.RunResponse Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap.Run(Istu.Elma.Auth.ElmaServiceReference.RunRequest request) {
             return base.Channel.Run(request);
         }
         
-        public long Run(string userName, string password, string token, string instanceName, Istu.Elma.Auth.ElmaService.WebData data) {
-            Istu.Elma.Auth.ElmaService.RunRequest inValue = new Istu.Elma.Auth.ElmaService.RunRequest();
-            inValue.Body = new Istu.Elma.Auth.ElmaService.RunRequestBody();
+        public long Run(string userName, string password, string token, string instanceName, Istu.Elma.Auth.ElmaServiceReference.WebData data) {
+            Istu.Elma.Auth.ElmaServiceReference.RunRequest inValue = new Istu.Elma.Auth.ElmaServiceReference.RunRequest();
+            inValue.Body = new Istu.Elma.Auth.ElmaServiceReference.RunRequestBody();
             inValue.Body.userName = userName;
             inValue.Body.password = password;
             inValue.Body.token = token;
             inValue.Body.instanceName = instanceName;
             inValue.Body.data = data;
-            Istu.Elma.Auth.ElmaService.RunResponse retVal = ((Istu.Elma.Auth.ElmaService.WFPWebServiceSoap)(this)).Run(inValue);
+            Istu.Elma.Auth.ElmaServiceReference.RunResponse retVal = ((Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap)(this)).Run(inValue);
             return retVal.Body.RunResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.RunResponse> Istu.Elma.Auth.ElmaService.WFPWebServiceSoap.RunAsync(Istu.Elma.Auth.ElmaService.RunRequest request) {
+        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.RunResponse> Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap.RunAsync(Istu.Elma.Auth.ElmaServiceReference.RunRequest request) {
             return base.Channel.RunAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.RunResponse> RunAsync(string userName, string password, string token, string instanceName, Istu.Elma.Auth.ElmaService.WebData data) {
-            Istu.Elma.Auth.ElmaService.RunRequest inValue = new Istu.Elma.Auth.ElmaService.RunRequest();
-            inValue.Body = new Istu.Elma.Auth.ElmaService.RunRequestBody();
+        public System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.RunResponse> RunAsync(string userName, string password, string token, string instanceName, Istu.Elma.Auth.ElmaServiceReference.WebData data) {
+            Istu.Elma.Auth.ElmaServiceReference.RunRequest inValue = new Istu.Elma.Auth.ElmaServiceReference.RunRequest();
+            inValue.Body = new Istu.Elma.Auth.ElmaServiceReference.RunRequestBody();
             inValue.Body.userName = userName;
             inValue.Body.password = password;
             inValue.Body.token = token;
             inValue.Body.instanceName = instanceName;
             inValue.Body.data = data;
-            return ((Istu.Elma.Auth.ElmaService.WFPWebServiceSoap)(this)).RunAsync(inValue);
+            return ((Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap)(this)).RunAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Istu.Elma.Auth.ElmaService.GetStatusResponse Istu.Elma.Auth.ElmaService.WFPWebServiceSoap.GetStatus(Istu.Elma.Auth.ElmaService.GetStatusRequest request) {
+        Istu.Elma.Auth.ElmaServiceReference.GetStatusResponse Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap.GetStatus(Istu.Elma.Auth.ElmaServiceReference.GetStatusRequest request) {
             return base.Channel.GetStatus(request);
         }
         
         public int GetStatus(string userName, string password, long instanceId) {
-            Istu.Elma.Auth.ElmaService.GetStatusRequest inValue = new Istu.Elma.Auth.ElmaService.GetStatusRequest();
-            inValue.Body = new Istu.Elma.Auth.ElmaService.GetStatusRequestBody();
+            Istu.Elma.Auth.ElmaServiceReference.GetStatusRequest inValue = new Istu.Elma.Auth.ElmaServiceReference.GetStatusRequest();
+            inValue.Body = new Istu.Elma.Auth.ElmaServiceReference.GetStatusRequestBody();
             inValue.Body.userName = userName;
             inValue.Body.password = password;
             inValue.Body.instanceId = instanceId;
-            Istu.Elma.Auth.ElmaService.GetStatusResponse retVal = ((Istu.Elma.Auth.ElmaService.WFPWebServiceSoap)(this)).GetStatus(inValue);
+            Istu.Elma.Auth.ElmaServiceReference.GetStatusResponse retVal = ((Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap)(this)).GetStatus(inValue);
             return retVal.Body.GetStatusResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.GetStatusResponse> Istu.Elma.Auth.ElmaService.WFPWebServiceSoap.GetStatusAsync(Istu.Elma.Auth.ElmaService.GetStatusRequest request) {
+        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.GetStatusResponse> Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap.GetStatusAsync(Istu.Elma.Auth.ElmaServiceReference.GetStatusRequest request) {
             return base.Channel.GetStatusAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.GetStatusResponse> GetStatusAsync(string userName, string password, long instanceId) {
-            Istu.Elma.Auth.ElmaService.GetStatusRequest inValue = new Istu.Elma.Auth.ElmaService.GetStatusRequest();
-            inValue.Body = new Istu.Elma.Auth.ElmaService.GetStatusRequestBody();
+        public System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.GetStatusResponse> GetStatusAsync(string userName, string password, long instanceId) {
+            Istu.Elma.Auth.ElmaServiceReference.GetStatusRequest inValue = new Istu.Elma.Auth.ElmaServiceReference.GetStatusRequest();
+            inValue.Body = new Istu.Elma.Auth.ElmaServiceReference.GetStatusRequestBody();
             inValue.Body.userName = userName;
             inValue.Body.password = password;
             inValue.Body.instanceId = instanceId;
-            return ((Istu.Elma.Auth.ElmaService.WFPWebServiceSoap)(this)).GetStatusAsync(inValue);
+            return ((Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap)(this)).GetStatusAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Istu.Elma.Auth.ElmaService.LoadContextResponse Istu.Elma.Auth.ElmaService.WFPWebServiceSoap.LoadContext(Istu.Elma.Auth.ElmaService.LoadContextRequest request) {
+        Istu.Elma.Auth.ElmaServiceReference.LoadContextResponse Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap.LoadContext(Istu.Elma.Auth.ElmaServiceReference.LoadContextRequest request) {
             return base.Channel.LoadContext(request);
         }
         
-        public Istu.Elma.Auth.ElmaService.WebData LoadContext(string userName, string password, long instanceId) {
-            Istu.Elma.Auth.ElmaService.LoadContextRequest inValue = new Istu.Elma.Auth.ElmaService.LoadContextRequest();
-            inValue.Body = new Istu.Elma.Auth.ElmaService.LoadContextRequestBody();
+        public Istu.Elma.Auth.ElmaServiceReference.WebData LoadContext(string userName, string password, long instanceId) {
+            Istu.Elma.Auth.ElmaServiceReference.LoadContextRequest inValue = new Istu.Elma.Auth.ElmaServiceReference.LoadContextRequest();
+            inValue.Body = new Istu.Elma.Auth.ElmaServiceReference.LoadContextRequestBody();
             inValue.Body.userName = userName;
             inValue.Body.password = password;
             inValue.Body.instanceId = instanceId;
-            Istu.Elma.Auth.ElmaService.LoadContextResponse retVal = ((Istu.Elma.Auth.ElmaService.WFPWebServiceSoap)(this)).LoadContext(inValue);
+            Istu.Elma.Auth.ElmaServiceReference.LoadContextResponse retVal = ((Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap)(this)).LoadContext(inValue);
             return retVal.Body.LoadContextResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.LoadContextResponse> Istu.Elma.Auth.ElmaService.WFPWebServiceSoap.LoadContextAsync(Istu.Elma.Auth.ElmaService.LoadContextRequest request) {
+        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.LoadContextResponse> Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap.LoadContextAsync(Istu.Elma.Auth.ElmaServiceReference.LoadContextRequest request) {
             return base.Channel.LoadContextAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.LoadContextResponse> LoadContextAsync(string userName, string password, long instanceId) {
-            Istu.Elma.Auth.ElmaService.LoadContextRequest inValue = new Istu.Elma.Auth.ElmaService.LoadContextRequest();
-            inValue.Body = new Istu.Elma.Auth.ElmaService.LoadContextRequestBody();
+        public System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.LoadContextResponse> LoadContextAsync(string userName, string password, long instanceId) {
+            Istu.Elma.Auth.ElmaServiceReference.LoadContextRequest inValue = new Istu.Elma.Auth.ElmaServiceReference.LoadContextRequest();
+            inValue.Body = new Istu.Elma.Auth.ElmaServiceReference.LoadContextRequestBody();
             inValue.Body.userName = userName;
             inValue.Body.password = password;
             inValue.Body.instanceId = instanceId;
-            return ((Istu.Elma.Auth.ElmaService.WFPWebServiceSoap)(this)).LoadContextAsync(inValue);
+            return ((Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap)(this)).LoadContextAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Istu.Elma.Auth.ElmaService.GetActiveTasksResponse Istu.Elma.Auth.ElmaService.WFPWebServiceSoap.GetActiveTasks(Istu.Elma.Auth.ElmaService.GetActiveTasksRequest request) {
+        Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksResponse Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap.GetActiveTasks(Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksRequest request) {
             return base.Channel.GetActiveTasks(request);
         }
         
-        public Istu.Elma.Auth.ElmaService.TaskInfo[] GetActiveTasks(string userName, string password, long instanceId) {
-            Istu.Elma.Auth.ElmaService.GetActiveTasksRequest inValue = new Istu.Elma.Auth.ElmaService.GetActiveTasksRequest();
-            inValue.Body = new Istu.Elma.Auth.ElmaService.GetActiveTasksRequestBody();
+        public Istu.Elma.Auth.ElmaServiceReference.TaskInfo[] GetActiveTasks(string userName, string password, long instanceId) {
+            Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksRequest inValue = new Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksRequest();
+            inValue.Body = new Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksRequestBody();
             inValue.Body.userName = userName;
             inValue.Body.password = password;
             inValue.Body.instanceId = instanceId;
-            Istu.Elma.Auth.ElmaService.GetActiveTasksResponse retVal = ((Istu.Elma.Auth.ElmaService.WFPWebServiceSoap)(this)).GetActiveTasks(inValue);
+            Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksResponse retVal = ((Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap)(this)).GetActiveTasks(inValue);
             return retVal.Body.GetActiveTasksResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.GetActiveTasksResponse> Istu.Elma.Auth.ElmaService.WFPWebServiceSoap.GetActiveTasksAsync(Istu.Elma.Auth.ElmaService.GetActiveTasksRequest request) {
+        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksResponse> Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap.GetActiveTasksAsync(Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksRequest request) {
             return base.Channel.GetActiveTasksAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.GetActiveTasksResponse> GetActiveTasksAsync(string userName, string password, long instanceId) {
-            Istu.Elma.Auth.ElmaService.GetActiveTasksRequest inValue = new Istu.Elma.Auth.ElmaService.GetActiveTasksRequest();
-            inValue.Body = new Istu.Elma.Auth.ElmaService.GetActiveTasksRequestBody();
+        public System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksResponse> GetActiveTasksAsync(string userName, string password, long instanceId) {
+            Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksRequest inValue = new Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksRequest();
+            inValue.Body = new Istu.Elma.Auth.ElmaServiceReference.GetActiveTasksRequestBody();
             inValue.Body.userName = userName;
             inValue.Body.password = password;
             inValue.Body.instanceId = instanceId;
-            return ((Istu.Elma.Auth.ElmaService.WFPWebServiceSoap)(this)).GetActiveTasksAsync(inValue);
+            return ((Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap)(this)).GetActiveTasksAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Istu.Elma.Auth.ElmaService.ExecuteTaskResponse Istu.Elma.Auth.ElmaService.WFPWebServiceSoap.ExecuteTask(Istu.Elma.Auth.ElmaService.ExecuteTaskRequest request) {
+        Istu.Elma.Auth.ElmaServiceReference.ExecuteTaskResponse Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap.ExecuteTask(Istu.Elma.Auth.ElmaServiceReference.ExecuteTaskRequest request) {
             return base.Channel.ExecuteTask(request);
         }
         
-        public void ExecuteTask(string userName, string password, long taskId, string connectorUid, Istu.Elma.Auth.ElmaService.WebData data) {
-            Istu.Elma.Auth.ElmaService.ExecuteTaskRequest inValue = new Istu.Elma.Auth.ElmaService.ExecuteTaskRequest();
-            inValue.Body = new Istu.Elma.Auth.ElmaService.ExecuteTaskRequestBody();
+        public void ExecuteTask(string userName, string password, long taskId, string connectorUid, Istu.Elma.Auth.ElmaServiceReference.WebData data) {
+            Istu.Elma.Auth.ElmaServiceReference.ExecuteTaskRequest inValue = new Istu.Elma.Auth.ElmaServiceReference.ExecuteTaskRequest();
+            inValue.Body = new Istu.Elma.Auth.ElmaServiceReference.ExecuteTaskRequestBody();
             inValue.Body.userName = userName;
             inValue.Body.password = password;
             inValue.Body.taskId = taskId;
             inValue.Body.connectorUid = connectorUid;
             inValue.Body.data = data;
-            Istu.Elma.Auth.ElmaService.ExecuteTaskResponse retVal = ((Istu.Elma.Auth.ElmaService.WFPWebServiceSoap)(this)).ExecuteTask(inValue);
+            Istu.Elma.Auth.ElmaServiceReference.ExecuteTaskResponse retVal = ((Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap)(this)).ExecuteTask(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.ExecuteTaskResponse> Istu.Elma.Auth.ElmaService.WFPWebServiceSoap.ExecuteTaskAsync(Istu.Elma.Auth.ElmaService.ExecuteTaskRequest request) {
+        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.ExecuteTaskResponse> Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap.ExecuteTaskAsync(Istu.Elma.Auth.ElmaServiceReference.ExecuteTaskRequest request) {
             return base.Channel.ExecuteTaskAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.ExecuteTaskResponse> ExecuteTaskAsync(string userName, string password, long taskId, string connectorUid, Istu.Elma.Auth.ElmaService.WebData data) {
-            Istu.Elma.Auth.ElmaService.ExecuteTaskRequest inValue = new Istu.Elma.Auth.ElmaService.ExecuteTaskRequest();
-            inValue.Body = new Istu.Elma.Auth.ElmaService.ExecuteTaskRequestBody();
+        public System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.ExecuteTaskResponse> ExecuteTaskAsync(string userName, string password, long taskId, string connectorUid, Istu.Elma.Auth.ElmaServiceReference.WebData data) {
+            Istu.Elma.Auth.ElmaServiceReference.ExecuteTaskRequest inValue = new Istu.Elma.Auth.ElmaServiceReference.ExecuteTaskRequest();
+            inValue.Body = new Istu.Elma.Auth.ElmaServiceReference.ExecuteTaskRequestBody();
             inValue.Body.userName = userName;
             inValue.Body.password = password;
             inValue.Body.taskId = taskId;
             inValue.Body.connectorUid = connectorUid;
             inValue.Body.data = data;
-            return ((Istu.Elma.Auth.ElmaService.WFPWebServiceSoap)(this)).ExecuteTaskAsync(inValue);
+            return ((Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap)(this)).ExecuteTaskAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Istu.Elma.Auth.ElmaService.SaveContextResponse Istu.Elma.Auth.ElmaService.WFPWebServiceSoap.SaveContext(Istu.Elma.Auth.ElmaService.SaveContextRequest request) {
+        Istu.Elma.Auth.ElmaServiceReference.SaveContextResponse Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap.SaveContext(Istu.Elma.Auth.ElmaServiceReference.SaveContextRequest request) {
             return base.Channel.SaveContext(request);
         }
         
-        public void SaveContext(string userName, string password, long instanceId, Istu.Elma.Auth.ElmaService.WebData data) {
-            Istu.Elma.Auth.ElmaService.SaveContextRequest inValue = new Istu.Elma.Auth.ElmaService.SaveContextRequest();
-            inValue.Body = new Istu.Elma.Auth.ElmaService.SaveContextRequestBody();
+        public void SaveContext(string userName, string password, long instanceId, Istu.Elma.Auth.ElmaServiceReference.WebData data) {
+            Istu.Elma.Auth.ElmaServiceReference.SaveContextRequest inValue = new Istu.Elma.Auth.ElmaServiceReference.SaveContextRequest();
+            inValue.Body = new Istu.Elma.Auth.ElmaServiceReference.SaveContextRequestBody();
             inValue.Body.userName = userName;
             inValue.Body.password = password;
             inValue.Body.instanceId = instanceId;
             inValue.Body.data = data;
-            Istu.Elma.Auth.ElmaService.SaveContextResponse retVal = ((Istu.Elma.Auth.ElmaService.WFPWebServiceSoap)(this)).SaveContext(inValue);
+            Istu.Elma.Auth.ElmaServiceReference.SaveContextResponse retVal = ((Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap)(this)).SaveContext(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.SaveContextResponse> Istu.Elma.Auth.ElmaService.WFPWebServiceSoap.SaveContextAsync(Istu.Elma.Auth.ElmaService.SaveContextRequest request) {
+        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.SaveContextResponse> Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap.SaveContextAsync(Istu.Elma.Auth.ElmaServiceReference.SaveContextRequest request) {
             return base.Channel.SaveContextAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.SaveContextResponse> SaveContextAsync(string userName, string password, long instanceId, Istu.Elma.Auth.ElmaService.WebData data) {
-            Istu.Elma.Auth.ElmaService.SaveContextRequest inValue = new Istu.Elma.Auth.ElmaService.SaveContextRequest();
-            inValue.Body = new Istu.Elma.Auth.ElmaService.SaveContextRequestBody();
+        public System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.SaveContextResponse> SaveContextAsync(string userName, string password, long instanceId, Istu.Elma.Auth.ElmaServiceReference.WebData data) {
+            Istu.Elma.Auth.ElmaServiceReference.SaveContextRequest inValue = new Istu.Elma.Auth.ElmaServiceReference.SaveContextRequest();
+            inValue.Body = new Istu.Elma.Auth.ElmaServiceReference.SaveContextRequestBody();
             inValue.Body.userName = userName;
             inValue.Body.password = password;
             inValue.Body.instanceId = instanceId;
             inValue.Body.data = data;
-            return ((Istu.Elma.Auth.ElmaService.WFPWebServiceSoap)(this)).SaveContextAsync(inValue);
+            return ((Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap)(this)).SaveContextAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Istu.Elma.Auth.ElmaService.TerminateResponse Istu.Elma.Auth.ElmaService.WFPWebServiceSoap.Terminate(Istu.Elma.Auth.ElmaService.TerminateRequest request) {
+        Istu.Elma.Auth.ElmaServiceReference.TerminateResponse Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap.Terminate(Istu.Elma.Auth.ElmaServiceReference.TerminateRequest request) {
             return base.Channel.Terminate(request);
         }
         
         public void Terminate(string userName, string password, long instanceId, string reason) {
-            Istu.Elma.Auth.ElmaService.TerminateRequest inValue = new Istu.Elma.Auth.ElmaService.TerminateRequest();
-            inValue.Body = new Istu.Elma.Auth.ElmaService.TerminateRequestBody();
+            Istu.Elma.Auth.ElmaServiceReference.TerminateRequest inValue = new Istu.Elma.Auth.ElmaServiceReference.TerminateRequest();
+            inValue.Body = new Istu.Elma.Auth.ElmaServiceReference.TerminateRequestBody();
             inValue.Body.userName = userName;
             inValue.Body.password = password;
             inValue.Body.instanceId = instanceId;
             inValue.Body.reason = reason;
-            Istu.Elma.Auth.ElmaService.TerminateResponse retVal = ((Istu.Elma.Auth.ElmaService.WFPWebServiceSoap)(this)).Terminate(inValue);
+            Istu.Elma.Auth.ElmaServiceReference.TerminateResponse retVal = ((Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap)(this)).Terminate(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.TerminateResponse> Istu.Elma.Auth.ElmaService.WFPWebServiceSoap.TerminateAsync(Istu.Elma.Auth.ElmaService.TerminateRequest request) {
+        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.TerminateResponse> Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap.TerminateAsync(Istu.Elma.Auth.ElmaServiceReference.TerminateRequest request) {
             return base.Channel.TerminateAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.TerminateResponse> TerminateAsync(string userName, string password, long instanceId, string reason) {
-            Istu.Elma.Auth.ElmaService.TerminateRequest inValue = new Istu.Elma.Auth.ElmaService.TerminateRequest();
-            inValue.Body = new Istu.Elma.Auth.ElmaService.TerminateRequestBody();
+        public System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.TerminateResponse> TerminateAsync(string userName, string password, long instanceId, string reason) {
+            Istu.Elma.Auth.ElmaServiceReference.TerminateRequest inValue = new Istu.Elma.Auth.ElmaServiceReference.TerminateRequest();
+            inValue.Body = new Istu.Elma.Auth.ElmaServiceReference.TerminateRequestBody();
             inValue.Body.userName = userName;
             inValue.Body.password = password;
             inValue.Body.instanceId = instanceId;
             inValue.Body.reason = reason;
-            return ((Istu.Elma.Auth.ElmaService.WFPWebServiceSoap)(this)).TerminateAsync(inValue);
+            return ((Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap)(this)).TerminateAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Istu.Elma.Auth.ElmaService.SendMessageResponse Istu.Elma.Auth.ElmaService.WFPWebServiceSoap.SendMessage(Istu.Elma.Auth.ElmaService.SendMessageRequest request) {
+        Istu.Elma.Auth.ElmaServiceReference.SendMessageResponse Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap.SendMessage(Istu.Elma.Auth.ElmaServiceReference.SendMessageRequest request) {
             return base.Channel.SendMessage(request);
         }
         
-        public Istu.Elma.Auth.ElmaService.WorkflowMessageSendResult SendMessage(string userName, string password, string messageTypeName, Istu.Elma.Auth.ElmaService.WebData data) {
-            Istu.Elma.Auth.ElmaService.SendMessageRequest inValue = new Istu.Elma.Auth.ElmaService.SendMessageRequest();
-            inValue.Body = new Istu.Elma.Auth.ElmaService.SendMessageRequestBody();
+        public Istu.Elma.Auth.ElmaServiceReference.WorkflowMessageSendResult SendMessage(string userName, string password, string messageTypeName, Istu.Elma.Auth.ElmaServiceReference.WebData data) {
+            Istu.Elma.Auth.ElmaServiceReference.SendMessageRequest inValue = new Istu.Elma.Auth.ElmaServiceReference.SendMessageRequest();
+            inValue.Body = new Istu.Elma.Auth.ElmaServiceReference.SendMessageRequestBody();
             inValue.Body.userName = userName;
             inValue.Body.password = password;
             inValue.Body.messageTypeName = messageTypeName;
             inValue.Body.data = data;
-            Istu.Elma.Auth.ElmaService.SendMessageResponse retVal = ((Istu.Elma.Auth.ElmaService.WFPWebServiceSoap)(this)).SendMessage(inValue);
+            Istu.Elma.Auth.ElmaServiceReference.SendMessageResponse retVal = ((Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap)(this)).SendMessage(inValue);
             return retVal.Body.SendMessageResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.SendMessageResponse> Istu.Elma.Auth.ElmaService.WFPWebServiceSoap.SendMessageAsync(Istu.Elma.Auth.ElmaService.SendMessageRequest request) {
+        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.SendMessageResponse> Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap.SendMessageAsync(Istu.Elma.Auth.ElmaServiceReference.SendMessageRequest request) {
             return base.Channel.SendMessageAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.SendMessageResponse> SendMessageAsync(string userName, string password, string messageTypeName, Istu.Elma.Auth.ElmaService.WebData data) {
-            Istu.Elma.Auth.ElmaService.SendMessageRequest inValue = new Istu.Elma.Auth.ElmaService.SendMessageRequest();
-            inValue.Body = new Istu.Elma.Auth.ElmaService.SendMessageRequestBody();
+        public System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.SendMessageResponse> SendMessageAsync(string userName, string password, string messageTypeName, Istu.Elma.Auth.ElmaServiceReference.WebData data) {
+            Istu.Elma.Auth.ElmaServiceReference.SendMessageRequest inValue = new Istu.Elma.Auth.ElmaServiceReference.SendMessageRequest();
+            inValue.Body = new Istu.Elma.Auth.ElmaServiceReference.SendMessageRequestBody();
             inValue.Body.userName = userName;
             inValue.Body.password = password;
             inValue.Body.messageTypeName = messageTypeName;
             inValue.Body.data = data;
-            return ((Istu.Elma.Auth.ElmaService.WFPWebServiceSoap)(this)).SendMessageAsync(inValue);
+            return ((Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap)(this)).SendMessageAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Istu.Elma.Auth.ElmaService.SendMessageToInstanceResponse Istu.Elma.Auth.ElmaService.WFPWebServiceSoap.SendMessageToInstance(Istu.Elma.Auth.ElmaService.SendMessageToInstanceRequest request) {
+        Istu.Elma.Auth.ElmaServiceReference.SendMessageToInstanceResponse Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap.SendMessageToInstance(Istu.Elma.Auth.ElmaServiceReference.SendMessageToInstanceRequest request) {
             return base.Channel.SendMessageToInstance(request);
         }
         
-        public Istu.Elma.Auth.ElmaService.WorkflowMessageSendResult SendMessageToInstance(string userName, string password, long instanceId, string messageTypeName, Istu.Elma.Auth.ElmaService.WebData data) {
-            Istu.Elma.Auth.ElmaService.SendMessageToInstanceRequest inValue = new Istu.Elma.Auth.ElmaService.SendMessageToInstanceRequest();
-            inValue.Body = new Istu.Elma.Auth.ElmaService.SendMessageToInstanceRequestBody();
+        public Istu.Elma.Auth.ElmaServiceReference.WorkflowMessageSendResult SendMessageToInstance(string userName, string password, long instanceId, string messageTypeName, Istu.Elma.Auth.ElmaServiceReference.WebData data) {
+            Istu.Elma.Auth.ElmaServiceReference.SendMessageToInstanceRequest inValue = new Istu.Elma.Auth.ElmaServiceReference.SendMessageToInstanceRequest();
+            inValue.Body = new Istu.Elma.Auth.ElmaServiceReference.SendMessageToInstanceRequestBody();
             inValue.Body.userName = userName;
             inValue.Body.password = password;
             inValue.Body.instanceId = instanceId;
             inValue.Body.messageTypeName = messageTypeName;
             inValue.Body.data = data;
-            Istu.Elma.Auth.ElmaService.SendMessageToInstanceResponse retVal = ((Istu.Elma.Auth.ElmaService.WFPWebServiceSoap)(this)).SendMessageToInstance(inValue);
+            Istu.Elma.Auth.ElmaServiceReference.SendMessageToInstanceResponse retVal = ((Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap)(this)).SendMessageToInstance(inValue);
             return retVal.Body.SendMessageToInstanceResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.SendMessageToInstanceResponse> Istu.Elma.Auth.ElmaService.WFPWebServiceSoap.SendMessageToInstanceAsync(Istu.Elma.Auth.ElmaService.SendMessageToInstanceRequest request) {
+        System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.SendMessageToInstanceResponse> Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap.SendMessageToInstanceAsync(Istu.Elma.Auth.ElmaServiceReference.SendMessageToInstanceRequest request) {
             return base.Channel.SendMessageToInstanceAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaService.SendMessageToInstanceResponse> SendMessageToInstanceAsync(string userName, string password, long instanceId, string messageTypeName, Istu.Elma.Auth.ElmaService.WebData data) {
-            Istu.Elma.Auth.ElmaService.SendMessageToInstanceRequest inValue = new Istu.Elma.Auth.ElmaService.SendMessageToInstanceRequest();
-            inValue.Body = new Istu.Elma.Auth.ElmaService.SendMessageToInstanceRequestBody();
+        public System.Threading.Tasks.Task<Istu.Elma.Auth.ElmaServiceReference.SendMessageToInstanceResponse> SendMessageToInstanceAsync(string userName, string password, long instanceId, string messageTypeName, Istu.Elma.Auth.ElmaServiceReference.WebData data) {
+            Istu.Elma.Auth.ElmaServiceReference.SendMessageToInstanceRequest inValue = new Istu.Elma.Auth.ElmaServiceReference.SendMessageToInstanceRequest();
+            inValue.Body = new Istu.Elma.Auth.ElmaServiceReference.SendMessageToInstanceRequestBody();
             inValue.Body.userName = userName;
             inValue.Body.password = password;
             inValue.Body.instanceId = instanceId;
             inValue.Body.messageTypeName = messageTypeName;
             inValue.Body.data = data;
-            return ((Istu.Elma.Auth.ElmaService.WFPWebServiceSoap)(this)).SendMessageToInstanceAsync(inValue);
+            return ((Istu.Elma.Auth.ElmaServiceReference.WFPWebServiceSoap)(this)).SendMessageToInstanceAsync(inValue);
         }
     }
 }
