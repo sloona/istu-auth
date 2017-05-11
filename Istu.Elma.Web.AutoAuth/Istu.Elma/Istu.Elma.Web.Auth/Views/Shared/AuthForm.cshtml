@@ -1,6 +1,8 @@
 ﻿@model Istu.Elma.Web.Auth.Models.AuthModel
 
-@using (Html.BeginForm("CreateElmaTask", "Registration", FormMethod.Post, new { enctype = "multipart/form-data" }))
+<div>test @ViewBag.Controller</div>
+
+@using (Html.BeginForm("CreateElmaTask", (string)ViewBag.Controller, FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
     

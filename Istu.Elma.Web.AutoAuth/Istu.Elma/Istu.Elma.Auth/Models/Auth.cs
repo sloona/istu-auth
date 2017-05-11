@@ -14,5 +14,8 @@ namespace Istu.Elma.Auth.Models
 
         [DisplayName("Email")]
         public string Email { get; set; }
+
+        public string Token { get; set; }
+        public string InstanceName { get; set; }
     }
 }

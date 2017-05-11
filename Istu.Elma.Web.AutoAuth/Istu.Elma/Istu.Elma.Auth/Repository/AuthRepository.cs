@@ -18,14 +18,19 @@ namespace Istu.Elma.Auth.Repository
             return new Models.Auth();
         }
 
-        public void CreateElmaTask(string Fio="", string Email = "")
+        //public long CreateElmaTask(string Fio = "", string Email = "", string token = "", string instanceName = "")
+        public long CreateElmaTask(Models.Auth model)
         {
-            WFPWebServiceSoapClient elmaClient = new WFPWebServiceSoapClient("WFPWebServiceSoap");
-            var data = new WebData();
-            //var t = new WebDataItem();
-            //t.Name = "test"; t.Value = "test value";
-            data.Items = new WebDataItem[] { new WebDataItem{Name = "Fio", Value = Fio }, new WebDataItem { Name = "Email", Value = Email }};
-            elmaClient.Run("service", "Password_123", "16040229-1144-42b7-9dff-33e1c03c01f3", "Реквизиты доступа к системе Элма", data);
+            try {
+                WFPWebServiceSoapClient elmaClient = new WFPWebServiceSoapClient("WFPWebServiceSoap");
+                var data = new WebData();
+                data.Items = new WebDataItem[] { new WebDataItem { Name = "Fio", Value = model.FullName }, new WebDataItem { Name = "Email", Value = model.Email } };
+                return elmaClient.Run("service", "Password_123", model.Token, model.InstanceName, data);
+                //return elmaClient.Run("service", "Password_123", "16040229-1144-42b7-9dff-33e1c03c01f3", "Реквизиты доступа к системе Элма", data);
+            } catch
+            {
+                return 0;
+            }
         }
     }
 }
